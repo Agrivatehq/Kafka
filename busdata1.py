@@ -4,6 +4,7 @@ from pykafka import KafkaClient
 import json
 from datetime import datetime
 import uuid
+import time
 
 
 # Reads coordinates from Geojson
@@ -18,7 +19,7 @@ def generate_uuid():
 
 # Kafka Producer
 client = KafkaClient(hosts="localhost:9092")
-topic = client.topics['testBusdata']
+topic = client.topics['geotest']
 producer = topic.get_sync_producer()
 
 
@@ -37,6 +38,7 @@ def generate_checkpoint(coordinates):
         message = json.dumps(data)
         print(message)
         producer.produce(message.encode('ascii'))
+        time.sleep(1)
 
         #if the bus reached the destination or last coordinates, it starts from the beggining 
         if i == len(coordinates)-1:

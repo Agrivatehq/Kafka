@@ -3,7 +3,7 @@ from pykafka import KafkaClient
 # kafka producer
 
 client = KafkaClient(hosts="localhost:9092")
-topic = client.topics['testBusdata']
+topic = client.topics['geodata_final']
 producer = topic.get_sync_producer()
 
 count = 1
