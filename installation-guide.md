@@ -135,5 +135,15 @@ bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic testTopi
 Python kafka library
 
 1. Confluent-kafka
-2. python-kafka
+2. [python-kafka](https://pypi.org/project/kafka-python/)
 3. pyKafka
+
+
+*****
+
+- [kafka-python explained in 10 lines of code](https://towardsdatascience.com/kafka-python-explained-in-10-lines-of-code-800e3e07dad1)
+- [PyKafka: Fast, Pythonic Kafka, at Last!](https://blog.parse.ly/post/3886/pykafka-now/)
+- [Setting up kafka cluster](https://medium.com/@kekayan/a-guide-to-kafka-clustering-in-ubuntu-18-04-5eac0eaf08a2)
+- [Manually delete kafka topics](https://medium.com/@contactsunny/manually-delete-apache-kafka-topics-424c7e016ff3)
+- [Kafka Python tutorial](https://www.youtube.com/playlist?list=PLxoOrmZMsAWxXBF8h_TPqYJNsh3x4GyO4)
+- [Realtime Maps - Kafka, Python, Leaflet.js](https://www.youtube.com/playlist?list=PL2UmzTIzxgL7Bq-mW--vtsM2YFF9GqhVB)
